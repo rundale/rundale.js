@@ -1,0 +1,20 @@
+{
+  "name": "rundale",
+  "version": "1.0.0",
+  "description": "Helper services for Node.js",
+  "main": "rundale.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rundale/rundale.js.git"
+  },
+  "keywords": [
+    "rundale",
+    "helper services"
+  ],
+  "author": "https://github.com/rundale",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rundale/rundale.js/issues"
+  },
+  "homepage": "https://github.com/rundale/rundale.js#readme"
+}
