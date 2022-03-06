@@ -1,4 +1,4 @@
-const Log = require("./log");
+const Log = require("./services/log");
 
 const Rundale = {
   Log,
