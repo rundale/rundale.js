@@ -1,6 +1,6 @@
 {
   "name": "rundale",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Helper services for Node.js",
   "scripts": {
     "test": "mocha"
@@ -21,6 +21,9 @@
   },
   "homepage": "https://github.com/rundale/rundale.js#readme",
   "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
     "chai": "^4.3.6",
     "mocha": "^9.2.1"
   }

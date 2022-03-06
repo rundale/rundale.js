@@ -1,11 +1,10 @@
-const path = require("path");
 const fs = require("fs");
 const fsPromise = require("fs/promises");
-
-const logPath = path.join(__dirname, "../app.log");
+const config = require("../config");
 
 async function log(type, message) {
   try {
+    const logPath = await config("log.path");
     if (!fs.existsSync(logPath)) await fsPromise.writeFile(logPath, "");
     const content =
       message instanceof Error
