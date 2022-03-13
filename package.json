@@ -1,6 +1,6 @@
 {
   "name": "rundale",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Helper services for Node.js",
   "scripts": {
     "build": "rm -rf dist && tsc",
