@@ -1,0 +1,5 @@
+src
+test
+rundale.config.json
+tsconfig.json
+*.log
