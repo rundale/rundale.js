@@ -3,7 +3,7 @@
   "version": "1.0.3",
   "description": "Helper services for Node.js",
   "scripts": {
-    "build": "tsc",
+    "build": "rm -rf dist && tsc",
     "test": "mocha"
   },
   "main": "dist/Rundale.js",
