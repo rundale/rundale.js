@@ -1,5 +1,4 @@
 const fs = require("fs");
-const fsPromise = require("fs/promises");
 const { assert } = require("chai");
 const { config, log } = require("../dist/rundale");
 
@@ -10,7 +9,7 @@ async function removeLog() {
 
 async function readLog() {
   const logPath = await config.get("log.path");
-  return fsPromise.readFile(logPath, { encoding: "utf-8" });
+  return fs.readFileSync(logPath, { encoding: "utf-8" });
 }
 
 describe("hooks", () => {

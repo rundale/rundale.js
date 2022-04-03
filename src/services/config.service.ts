@@ -1,4 +1,4 @@
-import * as fsPromise from "fs/promises";
+import * as fs from "fs/promises";
 
 export type ConfigData = {
   log: {
@@ -19,7 +19,7 @@ const config: Config = {
   async loadLocal() {
     try {
       if (this.cache) return this.cache;
-      const logStr = await fsPromise.readFile(this.localPath, {
+      const logStr = await fs.readFile(this.localPath, {
         encoding: "utf-8",
       });
       return JSON.parse(logStr);
