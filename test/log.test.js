@@ -1,15 +1,15 @@
 const fs = require("fs");
 const fsPromise = require("fs/promises");
 const { assert } = require("chai");
-const { log, Config } = require("../dist/Rundale");
+const { config, log } = require("../dist/rundale");
 
 async function removeLog() {
-  const logPath = await Config.get("log.path");
+  const logPath = await config.get("log.path");
   if (fs.existsSync(logPath)) fs.unlinkSync(logPath);
 }
 
 async function readLog() {
-  const logPath = await Config.get("log.path");
+  const logPath = await config.get("log.path");
   return fsPromise.readFile(logPath, { encoding: "utf-8" });
 }
 

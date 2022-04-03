@@ -1,12 +1,15 @@
 {
   "name": "rundale",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Helper services for Node.js",
   "scripts": {
-    "build": "rm -rf dist && tsc",
-    "test": "mocha"
+    "build": "tsc",
+    "test": "mocha",
+    "prebuild": "rm -rf dist",
+    "pretest": "npm run build",
+    "prepublishOnly": "npm run test"
   },
-  "main": "dist/Rundale.js",
+  "main": "dist/rundale.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rundale/rundale.js.git"
