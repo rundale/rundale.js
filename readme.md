@@ -1,11 +1,29 @@
 # Rundale.js
 Helper services for Node.js
 
-### Usage
-```js
-  const { Log } = require('rundale')
+### Services
+Currently Rundale.js support log service only. We are working on more services. Hopefully it will available soon.
 
-  Log.info('Hello world')
+#### Log
+##### Usage
+| Type      | Usage                  | Message                   |
+|-----------|------------------------|---------------------------|
+| emergency | log.emergency(message) | string \| Object \| Error |
+| alert     | log.alert(message)     | string \| Object \| Error |
+| critical  | log.critical(message)  | string \| Object \| Error |
+| error     | log.error(message)     | string \| Object \| Error |
+| warning   | log.warning(message)   | string \| Object \| Error |
+| notice    | log.notice(message)    | string \| Object \| Error |
+| info      | log.info(message)      | string \| Object \| Error |
+| debug     | log.debug(message)     | string \| Object \| Error |
+
+##### Example
+```js
+  const { log } = require('rundale')
+
+  log.info('User logged in')
+  log.debug({ status: 404 })
+  log.error(new Error('Unable to process mail'))
 ```
 
 ### Configuration

@@ -1,9 +1,9 @@
 import Config from "./Config";
-import Log from "./services/Log";
+import log from "./services/log";
 
 const Rundale = {
   Config,
-  Log,
+  log,
 };
 
 module.exports = Rundale;
