@@ -3,6 +3,7 @@ import * as fs from "fs/promises";
 export type ConfigData = {
   log: {
     path: string;
+    maxSize: string;
   };
 };
 

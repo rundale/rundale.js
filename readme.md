@@ -31,7 +31,8 @@ Here is the default Rundale configuration. You can create a `rundale.config.json
 ```json
 {
   "log": {
-    "path": "./rundale.log"
+    "path": "./rundale.log",
+    "maxSize": "10MB" 
   }
 }
 ```
