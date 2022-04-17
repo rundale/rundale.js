@@ -36,7 +36,7 @@ Here is the default Rundale configuration.
   }
 }
 ```
-You can create a `rundale.config.json` file in your project's root directory and override these configuration by initializing Rundale by running following command.
+You can create a `rundale.config.json` file in your project's root directory and override this configuration by initializing Rundale by running the following command.
 ```sh
 npx rundale
 ```
