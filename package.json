@@ -1,6 +1,6 @@
 {
   "name": "rundale",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Helper services for Node.js",
   "scripts": {
     "build": "tsc",
@@ -24,8 +24,13 @@
     "url": "https://github.com/rundale/rundale.js/issues"
   },
   "homepage": "https://github.com/rundale/rundale.js#readme",
+  "bin": {
+    "rundale": "dist/cli.js"
+  },
   "dependencies": {
     "bytes": "^3.1.2",
+    "chalk": "4.1.2",
+    "cliffy": "^2.5.0",
     "lodash": "^4.17.21"
   },
   "devDependencies": {

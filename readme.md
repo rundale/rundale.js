@@ -27,7 +27,7 @@ Currently Rundale.js support log service only. We are working on more services. 
 ```
 
 ### Configuration
-Here is the default Rundale configuration. You can create a `rundale.config.json` file in your project's root directory and override these configuration.
+Here is the default Rundale configuration.
 ```json
 {
   "log": {
@@ -35,4 +35,12 @@ Here is the default Rundale configuration. You can create a `rundale.config.json
     "maxSize": "10MB" 
   }
 }
+```
+You can create a `rundale.config.json` file in your project's root directory and override these configuration by initializing Rundale by running following command.
+```sh
+npx rundale
+```
+```sh
+> init
+Successfully initialized. You can find the config file from rundale.config.json
 ```
